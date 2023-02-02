@@ -75,3 +75,19 @@ h6 {
     font-family: inherit;
     font-weight: 400;
 }
+
+/*===========================*/
+
+body {
+    font-family: Montserrat;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+._container {
+    max-width: 1046px;
+    margin: 0 auto;
+}
