@@ -76,10 +76,12 @@ h6 {
     font-weight: 400;
 }
 
-/*===========================*/
+/*=========================================================================*/
 
 body {
     font-family: Montserrat;
+    color: #252B42;
+    font-weight: 500;
 }
 
 .wrapper {
@@ -89,5 +91,89 @@ body {
 
 ._container {
     max-width: 1046px;
+    padding: 0px 15px;
     margin: 0 auto;
+    box-sizing: content-box;
+}
+
+
+/* === Header ==============================================================*/
+
+.header {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 50;
+}
+
+.header__container {
+    display: flex;
+    min-height: 104px;
+    align-items: center;
+}
+
+@media (max-width: 479px) {
+    .header__container {
+        min-height: 70px;
+    }
+}
+
+.header__logo {
+    font-weight: 700;
+    font-size: 24px;
+    color: inherit;
+}
+
+.neader__menu {
+    margin: 0px 0px 0px 133px;
+}
+
+@media (max-width: 992px) {
+    .neader__menu {
+        margin: 0px 0px 0px 80px;
+    }
+}
+
+@media (max-width: 767px) {
+    .neader__menu {
+        margin: 0px 0px 0px 40px;
+    }
+}
+
+@media (max-width: 479px) {
+    .neader__menu {
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+
+.menu {
+    padding: 5px 0px;
+}
+
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu__item {
+    
+}
+
+.menu__item:not(:last-child) {
+    margin: 0px 21px 0px 0px;
+}
+
+
+.menu__link {
+    color: #737373;
+    line-height: 171%;
+    font-weight: 600;
+}
+
+@media (max-width: 479px) {
+    .menu__link {
+       font-size: 18px;
+    }
 }
